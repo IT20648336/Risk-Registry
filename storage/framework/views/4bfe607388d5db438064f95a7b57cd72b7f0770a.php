@@ -1,0 +1,1 @@
+<?php /**PATH /data/RiskRegistry/resources/views/search.blade.php ENDPATH**/ ?>
