@@ -230,7 +230,7 @@ public function RiskData(Request $request){
         $IPAddress=$request->ip();
         $URL=url()->full(); 
         
-      return view('RiskCategory.RiskCategory', ['Category' => $data]);
+      //return view('RiskCategory.RiskCategory', ['Category' => $data]);
       
     }
 public function GetRiskCategory()

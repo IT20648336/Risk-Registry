@@ -247,7 +247,7 @@ $categoryNames = $categories;
 }  
 
 
-function GetCategory()
+public function GetCategory()
 {
     $Data=Quarterly_Changes::select('*')->orderBy('Category_Number','ASC')->get();
        return view('Dashboard')->with('Quarterly_Changes', $Data);

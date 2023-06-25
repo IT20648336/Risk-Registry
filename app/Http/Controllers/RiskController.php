@@ -40,7 +40,7 @@ function MyRisks(Request $request){
     }
     return view('/Risk.MyRisks',['Risk'=>$Data]);
 }
-function AssignedRisks(Request $request){
+private function AssignedRisks(Request $request){
     $User=ucfirst($request->session()->get('username'));
     //$Role=ucfirst($request->session()->get('Role'));
     
@@ -58,15 +58,15 @@ function AssignedRisks(Request $request){
 //return $Data;
     return view('/Risk.AssignedRisks',['Risk'=>$Data,'User'=>$User]);
 }
-function ViewRiskData(Request $request){
+private function ViewRiskData(Request $request){
     $Message=array('StatusCode'=>'00','RiskId'=>$request['RiskId']);
     return json_encode($Message);
 }
-function ViewRiskHistory(Request $request){
+private function ViewRiskHistory(Request $request){
     $Message=array('StatusCode'=>'00','RiskId'=>$request['RiskId']);
     return json_encode($Message);
 }
-function ViewRiskId(Request $request){
+private function ViewRiskId(Request $request){
     $CreatedUserId=ucfirst($request->session()->get('username'));
     $RiskId=$request['RiskId'];
     $RisksData=Risks::where('Id',$RiskId)->get(); 
@@ -81,7 +81,7 @@ function ViewRiskId(Request $request){
     }
      return view('Risk.ViewRisk',['RisksData'=>$RisksData,'KRIData'=>$KRIData,'TreatmentData'=>$TreatmentData,'CloseButton'=>$CloseButton,'Current_User'=>$CreatedUserId]);
 }
-function ViewRiskHistoryId(Request $request){
+private function ViewRiskHistoryId(Request $request){
     $RiskId=$request['RiskId']; 
     $RisksHistoryData=Event_Logs::where('Risk_Id',$RiskId)->orderBy('Date_Time', 'DESC')->get(); 
      return view('Risk.ViewRiskHistory',['RisksHistoryData'=>$RisksHistoryData]);
