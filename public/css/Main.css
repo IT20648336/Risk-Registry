@@ -1,21 +1,21 @@
  
 .ContainerLogin {
-    border-radius: 4px;
-    background-color: transparent;
-    background-color: #ffffff;
-    text-align: center;
-    font-family:Calibri;
-    color:#6B6B6B;
-    padding: 5px 5px 5px 5px;
-    width:20%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%; 
-    box-shadow: 0px 0px 0px 0px #CFD0DA;
-    font-size:14px;
-    position: absolute;
-    top: calc(10% - 42px); 
-    left: calc(70.5% - 0px); 
+  border-radius: 4px;
+  background-color: transparent;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: Calibri, Arial, sans-serif; 
+  color: #6B6B6B;
+  padding: 5px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  box-shadow: 0px 0px 0px 0px #CFD0DA;
+  font-size: 14px;
+  position: absolute;
+  top: calc(10% - 42px);
+  left: calc(70.5% - 0px);
 }
 
 .ContainerRegister {
@@ -23,7 +23,7 @@
     background-color: transparent;
     background-color: #ffffff;
     text-align: center;
-    font-family:Calibri;
+    font-family: Calibri, Arial, sans-serif; 
     color:#6B6B6B;
     padding: 5px 5px 5px 5px;
     width:30%;
@@ -319,12 +319,7 @@ border-color: transparent !important; }
 	border-color: #007489;
 	outline: none;
 }
-ContainerHeader/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -396,15 +391,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
-
-abbr[title],
-abbr[data-original-title] {
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-  cursor: help;
-  border-bottom: 0;
-  text-decoration-skip-ink: none; }
 
 address {
   margin-bottom: 1rem;
